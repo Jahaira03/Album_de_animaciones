@@ -66,7 +66,7 @@ html, body {
 }
 
 .cubo2{
-    animation-name:;
+    animation-name:"";
     background-color: chartreuse;
 }
 
@@ -99,9 +99,101 @@ animation-name: temblar;
 animation-duration: 3s;
 }
 
+.Menu {
+    display: flex;
+    width: 90%;
+    justify-content: center;
 
+}
 
+.Menu ul{
+    display: flex;
+    width: min-content;
+    height: min-content;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 0;
+}
 
+.Menu ul li {
+    display: flex;
+    background-color: #A9ECFF;
+    align-items: center;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    width: auto;
+    height: 90%;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    transition: border 2s, background-color 2s, box shadow 3s;
+} 
+
+.Menu ul li:hover{
+    background-color: rgb 194, 194, 245;
+    border: 1px solid blue;
+    box-shadow: 4px 4px 14px 0px rgba(224, 19, 19, 0.41);
+
+}
+
+/* SECCION DE GIROS */
+
+#Giros{
+    display: flex;
+    width: 99%;
+    height: auto;
+    justify-content: space-around;
+
+}
+
+.card{
+    display: flex;
+    width: 160px;
+    height: 160px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #A9ECFF;
+    margin: 20px;
+}
+
+.card2{
+    display: flex;
+    width: 160px;
+    height: 160px;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #A9ECFF;
+    margin: 20px;
+}
+
+.transiciones{
+    display: grid;
+    width: 99%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto;
+    column-gap: 15px;
+    row-gap: 15px; 
+}
+
+@media screen and (min-width: 421px) and (max-width: 800px) {
+    .transiciones{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 375px) and (max-width: 420px) {
+    .transiciones{
+        grid-template-columns: 1fr;
+    }
+}
 
 /* animacion */
 @keyframes slidein {
