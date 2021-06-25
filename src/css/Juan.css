@@ -177,8 +177,14 @@ animation-duration: 3s;
     justify-content: center;
     background-color: #A9FFE8;
     margin: 20px;
+    transition: transform 3s;
 }
-
+.Giro_infinito{
+    animation-name: rotation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 .transiciones{
     font-family: "Mochi";
     font-size:18px;
@@ -245,4 +251,20 @@ animation-duration: 3s;
     100% {
         transform: rotate(0deg);
     }
+}
+/*Giros*/
+.Giro_completo:hover{
+    transform: rotate(360deg);
+}
+.Giro_completo_left:hover{
+    transform: rotate(-360deg);
+}
+.Medio_giro:hover{
+    transform: rotate(180deg);
+}
+.Medio_giro_left:hover{
+    transform: rotate(-180deg);
+}
+.Giro_infinito:hover{
+    transform: rotate(-0deg);
 }

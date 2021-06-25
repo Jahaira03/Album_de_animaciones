@@ -1,0 +1,7 @@
+/*Giros*/
+.Giro_completo{
+	transition: trasform 3s;
+}
+.Giro_completo:hover{
+	transition: rotate(360deg);
+}
