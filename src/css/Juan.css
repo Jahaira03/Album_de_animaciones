@@ -23,6 +23,7 @@ html, body {
 }
 
 .titulo{
+    color:#555555;
     display: flex;
     width: 100%;
 }
@@ -124,7 +125,7 @@ animation-duration: 3s;
 .Menu ul li {
     display: flex;
     font-family: "SpicyRice-Regular";
-    background-color: #A9ECFF;
+    background-color: #FFD0DD;
     align-items: center;
     list-style: none;
     font-size: 25px;
@@ -174,7 +175,7 @@ animation-duration: 3s;
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color: #A9ECFF;
+    background-color: #A9FFE8;
     margin: 20px;
 }
 
