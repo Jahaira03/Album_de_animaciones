@@ -5,7 +5,14 @@ html, body {
     width: 100%;
     flex-direction: column;
 }
-
+@font-face{
+    font-family: "SpicyRice-Regular";
+    src: url("../utils/fonts/SpicyRice-Regular.otf");
+}
+@font-face{
+    font-family: "Mochi";
+    src:url("../utils/fonts/Mochibun-Regular.woff");
+}
 .container{
     position: relative;
     display: flex;
@@ -103,7 +110,6 @@ animation-duration: 3s;
     display: flex;
     width: 90%;
     justify-content: center;
-
 }
 
 .Menu ul{
@@ -117,10 +123,10 @@ animation-duration: 3s;
 
 .Menu ul li {
     display: flex;
+    font-family: "SpicyRice-Regular";
     background-color: #A9ECFF;
     align-items: center;
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     width: auto;
     height: 90%;
@@ -132,7 +138,7 @@ animation-duration: 3s;
 } 
 
 .Menu ul li:hover{
-    background-color: rgb 194, 194, 245;
+    background-color: rgba(194, 194, 245);
     border: 1px solid blue;
     box-shadow: 4px 4px 14px 0px rgba(224, 19, 19, 0.41);
 
@@ -173,6 +179,8 @@ animation-duration: 3s;
 }
 
 .transiciones{
+    font-family: "Mochi";
+    font-size:18px;
     display: grid;
     width: 99%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
