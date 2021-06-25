@@ -185,7 +185,7 @@ animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-.transiciones{
+.transiciones, .giros{
     font-family: "Mochi";
     font-size:18px;
     display: grid;
@@ -194,18 +194,18 @@ animation-duration: 3s;
     justify-content: center;
     align-items: center;
     grid-template-rows: auto;
-    column-gap: 15px;
+    column-gap: 10px;
     row-gap: 15px; 
 }
 
 @media screen and (min-width: 421px) and (max-width: 800px) {
-    .transiciones{
+    .transiciones, .giros{
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (max-width: 375px) and (max-width: 420px) {
-    .transiciones{
+    .transiciones, .giros{
         grid-template-columns: 1fr;
     }
 }
@@ -266,5 +266,5 @@ animation-duration: 3s;
     transform: rotate(-180deg);
 }
 .Giro_infinito:hover{
-    transform: rotate(-0deg);
+    transform: rotate(infinite);
 }
